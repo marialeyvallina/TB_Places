@@ -37,6 +37,22 @@ with h5py.File("W17_similarity.h5", "r") as f:
 | Renningen  | R17|  7999  |       150K      |      0.4822     |
 | Wageningen | [W18](https://drive.google.com/open?id=1OhGArOsgo8T2idGGIWmxHTcML6lnj3jY)|  23043 |       1.03M | 0.4822|
 
+## Test scripts
+
+We also provide some scripts to evaluate proposed models.
+The usage is as follows:
+```bash
+python3 test.py idx_file weights_file feature_length output_file
+python3 evaluate.py similarity_file features_file
+
+```
+For instance:
+```bash
+python3 test.py W17.json weights/densenet161_w17.pth 2208 features/densenet161_w17.npy
+python3 evaluate.py W17_similarity.h5 features/densenet161_w17.npy
+
+```
+
 
 Please cite the following [IEEE Access](https://ieeexplore.ieee.org/document/8698240) or [Computer Analysis of Images and Patterns](https://link.springer.com/chapter/10.1007/978-3-030-29888-3_26) papers if you use the data.
 
