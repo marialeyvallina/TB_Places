@@ -1,5 +1,5 @@
 # TB-Places
-TB-Places is data set of garden images for testing algorithms for visual place recognition. It contains images with ground truth camera pose recorded in two real gardens at different times, with a total of four different recording sessions, with varying light conditions. We also provide ground truth for all possible pairs of images, indicating whether they depict the same place or not. 
+TB-Places is a data set of garden images for testing algorithms for visual place recognition. It contains images with ground truth camera pose recorded in two real gardens at different times, with a total of four different recording sessions, with varying light conditions. We also provide ground truth for all possible pairs of images, indicating whether they depict the same place or not. 
 
 The poses of the images are included in the \[datasetname].json files (i.e. W17.json), and come in the format of a 7 feature vector (t_x, t_y, t_z, q_x, q_y, q_z, q_w), with t corresponding to the translation vector and q to the rotation expressed in form of a quaternion.
 
